@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #3b4252; /* Polar Night */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ebcb8b; /* Aurora */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,133 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.predefined-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 1000px;
+  justify-content: center;
+}
+
+.predefined-colors button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #eceff4; /* Aurora */
+  cursor: pointer;
+  outline: none;
+}
+
+.predefined-colors button:hover {
+  box-shadow: 0 0 0 2px #eceff4; /* Aurora with transparency */
+}
+
+.color-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #2e3440; /* Polar Night */
+  color: #d8dee9; /* Snow Storm */
+}
+
+.button {
+  background-color: #81a1c1; /* Aurora */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  outline: none;
+}
+.button-off {
+  background-color: #bf616a; /* Aurora */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #5e81ac; /* Aurora (darker shade) */
+  box-shadow: 0 0 0 2px #eceff4; /* Aurora with transparency */
+}
+
+.button-off:hover {
+  background-color: #803940; /* Aurora (darker shade) */
+  box-shadow: 0 0 0 2px #eceff4; /* Aurora with transparency */
+}
+.button-selected {
+  background-color: #5e81ac; /* Aurora */
+  box-shadow: 0 0 0 2px #eceff4; /* Aurora with transparency */
+}
+
+.chrome-picker-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.brightness-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  width: 70%;
+  height: 8px;
+  background-color: #4c566a;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #d8dee9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #d8dee9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.brightness-value {
+  margin-left: 10px;
+  font-size: 18px;
 }

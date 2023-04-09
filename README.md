@@ -1,3 +1,8 @@
+# LED Controller for my desk LED strips, runs on a Raspberry Pi
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
